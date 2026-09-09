@@ -1,0 +1,5 @@
+Type=Exe
+Module=modTextExtraction; text_extraction.bas
+Startup="Sub Main"
+ExeName32="text_extraction.exe"
+Name="text_extraction"

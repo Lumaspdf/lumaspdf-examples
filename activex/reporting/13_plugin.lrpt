@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="Plugin" tagLangVersion="1">
+ <page width="210" height="297" marginLeft="15" marginTop="15" marginRight="15" marginBottom="15"/>
+ <bands>
+  <band kind="reportheader" name="rh" height="24">
+   <text name="p1" x="0" y="0" w="180" h="8" fontSize="16">PlugDouble('21') = {{expr: PlugDouble('21') }}</text>
+   <text name="p2" x="0" y="10" w="180" h="8" fontSize="12">PlugDouble('2.5') = {{expr: PlugDouble('2.5') }}</text>
+  </band>
+ </bands>
+</report>

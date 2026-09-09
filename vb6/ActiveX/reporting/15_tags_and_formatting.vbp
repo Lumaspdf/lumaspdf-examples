@@ -1,0 +1,5 @@
+Type=Exe
+Module=mod15_tags_and_formatting; 15_tags_and_formatting.bas
+Startup="Sub Main"
+ExeName32="15_tags_and_formatting.exe"
+Name="15_tags_and_formatting"

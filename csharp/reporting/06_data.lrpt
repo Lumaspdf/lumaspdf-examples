@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="CsvSales" tagLangVersion="1">
+ <page width="210" height="297" marginLeft="15" marginTop="15" marginRight="15" marginBottom="15"/>
+ <datasources><datasource alias="d" provider="csv" conn="06_data.csv"/></datasources>
+ <bands>
+  <band kind="reportheader" name="rh" height="12">
+   <text name="ttl" x="0" y="0" w="180" h="8" fontSize="16" hAlign="center">Sales by Region</text>
+  </band>
+  <band kind="pageheader" name="ph" height="8">
+   <text name="h1" x="0"   y="0" w="50" h="6" fontSize="9" style="">REGION</text>
+   <text name="h2" x="50"  y="0" w="60" h="6" fontSize="9">PRODUCT</text>
+   <text name="h3" x="110" y="0" w="30" h="6" fontSize="9" hAlign="right">QTY</text>
+   <text name="h4" x="140" y="0" w="40" h="6" fontSize="9" hAlign="right">PRICE</text>
+   <line name="hl" x="0" y="7" w="180" h="0.3" toX="180" toY="0"/>
+  </band>
+  <band kind="detail" name="det" height="6" data="d">
+   <text name="c1" x="0"   y="0" w="50" h="5" fontSize="9" wordWrap="0">{{d.Region}}</text>
+   <text name="c2" x="50"  y="0" w="60" h="5" fontSize="9" wordWrap="0">{{d.Product}}</text>
+   <text name="c3" x="110" y="0" w="30" h="5" fontSize="9" hAlign="right" wordWrap="0">{{d.Qty}}</text>
+   <text name="c4" x="140" y="0" w="40" h="5" fontSize="9" hAlign="right" wordWrap="0">{{d.Price}}</text>
+  </band>
+ </bands>
+</report>

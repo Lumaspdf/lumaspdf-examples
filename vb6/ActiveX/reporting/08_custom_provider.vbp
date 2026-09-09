@@ -1,0 +1,8 @@
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{E2FE2B22-5FF6-5275-A6E7-575E68D36DDD}#1.0#0#E:\LUMASPDFSDK\wrappers\activex\bin32\LumasPdfAX32.dll#LumasPdf PDF engine Automation library
+Class=Prov08Evt; 08_custom_provider.cls
+Module=mod08_custom_provider; 08_custom_provider.bas
+Startup="Sub Main"
+ExeName32="08_custom_provider.exe"
+Name="08_custom_provider"

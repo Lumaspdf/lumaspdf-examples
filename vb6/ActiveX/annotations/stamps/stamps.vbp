@@ -1,0 +1,5 @@
+Type=Exe
+Module=modStamps; stamps.bas
+Startup="Sub Main"
+ExeName32="stamps.exe"
+Name="stamps"

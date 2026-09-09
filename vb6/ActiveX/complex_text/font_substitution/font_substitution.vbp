@@ -1,0 +1,5 @@
+Type=Exe
+Module=modFontSubstitution; font_substitution.bas
+Startup="Sub Main"
+ExeName32="font_substitution.exe"
+Name="font_substitution"

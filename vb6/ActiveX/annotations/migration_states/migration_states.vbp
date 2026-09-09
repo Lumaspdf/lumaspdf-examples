@@ -1,0 +1,5 @@
+Type=Exe
+Module=modMigrationStates; migration_states.bas
+Startup="Sub Main"
+ExeName32="migration_states.exe"
+Name="migration_states"

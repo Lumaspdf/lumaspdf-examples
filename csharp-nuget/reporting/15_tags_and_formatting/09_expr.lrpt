@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="Expressions" tagLangVersion="1">
+ <page width="210" height="297" marginLeft="12" marginTop="12" marginRight="12" marginBottom="12"/>
+ <bands>
+  <band kind="reportheader" name="rh" height="209">
+   <text name="l0" x="0" y="0" w="185" h="5" fontSize="9" wordWrap="0">UPPER -&gt; {{expr: UPPER('abc')}}</text>
+   <text name="l5" x="0" y="5" w="185" h="5" fontSize="9" wordWrap="0">LOWER -&gt; {{expr: LOWER('ABC')}}</text>
+   <text name="l10" x="0" y="10" w="185" h="5" fontSize="9" wordWrap="0">LEFT -&gt; {{expr: LEFT('LumasReport', 5)}}</text>
+   <text name="l15" x="0" y="15" w="185" h="5" fontSize="9" wordWrap="0">RIGHT -&gt; {{expr: RIGHT('LumasReport', 6)}}</text>
+   <text name="l20" x="0" y="20" w="185" h="5" fontSize="9" wordWrap="0">SUBSTR -&gt; {{expr: SUBSTR('LumasReport', 6, 6)}}</text>
+   <text name="l25" x="0" y="25" w="185" h="5" fontSize="9" wordWrap="0">LEN -&gt; {{expr: LEN('LumasReport')}}</text>
+   <text name="l30" x="0" y="30" w="185" h="5" fontSize="9" wordWrap="0">TRIM -&gt; {{expr: '[' + TRIM('  hi  ') + ']'}}</text>
+   <text name="l35" x="0" y="35" w="185" h="5" fontSize="9" wordWrap="0">REPLACE -&gt; {{expr: REPLACE('a-b-c', '-', '+')}}</text>
+   <text name="l40" x="0" y="40" w="185" h="5" fontSize="9" wordWrap="0">PADL -&gt; {{expr: PADL('7', 4, '0')}}</text>
+   <text name="l45" x="0" y="45" w="185" h="5" fontSize="9" wordWrap="0">POS -&gt; {{expr: POS('Report', 'LumasReport')}}</text>
+   <text name="l50" x="0" y="50" w="185" h="5" fontSize="9" wordWrap="0">REVERSE -&gt; {{expr: REVERSE('abc')}}</text>
+   <text name="l55" x="0" y="55" w="185" h="5" fontSize="9" wordWrap="0">REPLICATE -&gt; {{expr: REPLICATE('ab', 3)}}</text>
+   <text name="l60" x="0" y="60" w="185" h="5" fontSize="9" wordWrap="0">CONTAINS -&gt; {{expr: CONTAINS('LumasReport', 'Rep')}}</text>
+   <text name="l65" x="0" y="65" w="185" h="5" fontSize="9" wordWrap="0">STARTSWITH -&gt; {{expr: STARTSWITH('LumasReport', 'Lumas')}}</text>
+   <text name="l70" x="0" y="70" w="185" h="5" fontSize="9" wordWrap="0">ENDSWITH -&gt; {{expr: ENDSWITH('LumasReport', 'port')}}</text>
+   <text name="l75" x="0" y="75" w="185" h="5" fontSize="9" wordWrap="0">ABS -&gt; {{expr: ABS(-42)}}</text>
+   <text name="l80" x="0" y="80" w="185" h="5" fontSize="9" wordWrap="0">ROUND -&gt; {{expr: ROUND(3.14159, 2)}}</text>
+   <text name="l85" x="0" y="85" w="185" h="5" fontSize="9" wordWrap="0">FLOOR -&gt; {{expr: FLOOR(3.9)}}</text>
+   <text name="l90" x="0" y="90" w="185" h="5" fontSize="9" wordWrap="0">CEIL -&gt; {{expr: CEIL(3.1)}}</text>
+   <text name="l95" x="0" y="95" w="185" h="5" fontSize="9" wordWrap="0">SQRT -&gt; {{expr: SQRT(144)}}</text>
+   <text name="l100" x="0" y="100" w="185" h="5" fontSize="9" wordWrap="0">POWER -&gt; {{expr: POWER(2, 10)}}</text>
+   <text name="l105" x="0" y="105" w="185" h="5" fontSize="9" wordWrap="0">MIN -&gt; {{expr: MIN(5, 3)}}</text>
+   <text name="l110" x="0" y="110" w="185" h="5" fontSize="9" wordWrap="0">MAX -&gt; {{expr: MAX(5, 3)}}</text>
+   <text name="l115" x="0" y="115" w="185" h="5" fontSize="9" wordWrap="0">SIGN -&gt; {{expr: SIGN(-7)}}</text>
+   <text name="l120" x="0" y="120" w="185" h="5" fontSize="9" wordWrap="0">TRUNC -&gt; {{expr: TRUNC(9.87)}}</text>
+   <text name="l125" x="0" y="125" w="185" h="5" fontSize="9" wordWrap="0">MOD_op -&gt; {{expr: 17 % 5}}</text>
+   <text name="l130" x="0" y="130" w="185" h="5" fontSize="9" wordWrap="0">YEAR -&gt; {{expr: YEAR(TODAY())}}</text>
+   <text name="l135" x="0" y="135" w="185" h="5" fontSize="9" wordWrap="0">FORMATDATE -&gt; {{expr: FORMATDATE('yyyy-mm-dd', TODAY())}}</text>
+   <text name="l140" x="0" y="140" w="185" h="5" fontSize="9" wordWrap="0">ADDDAYS -&gt; {{expr: FORMATDATE('yyyy-mm-dd', ADDDAYS(TODAY(), 7))}}</text>
+   <text name="l145" x="0" y="145" w="185" h="5" fontSize="9" wordWrap="0">DATEDIFF -&gt; {{expr: DATEDIFF('d', TODAY(), ADDDAYS(TODAY(), 30))}}</text>
+   <text name="l150" x="0" y="150" w="185" h="5" fontSize="9" wordWrap="0">CSTR -&gt; {{expr: CSTR(123)}}</text>
+   <text name="l155" x="0" y="155" w="185" h="5" fontSize="9" wordWrap="0">CINT -&gt; {{expr: CINT('45')}}</text>
+   <text name="l160" x="0" y="160" w="185" h="5" fontSize="9" wordWrap="0">CFLOAT -&gt; {{expr: CFLOAT('3.5') * 2}}</text>
+   <text name="l165" x="0" y="165" w="185" h="5" fontSize="9" wordWrap="0">VAL -&gt; {{expr: VAL('19') + 1}}</text>
+   <text name="l170" x="0" y="170" w="185" h="5" fontSize="9" wordWrap="0">FORMATNUM -&gt; {{expr: FORMATNUM('#,##0.00', 1234.5)}}</text>
+   <text name="l175" x="0" y="175" w="185" h="5" fontSize="9" wordWrap="0">ISNULL -&gt; {{expr: ISNULL(NULLIF(3, 3))}}</text>
+   <text name="l180" x="0" y="180" w="185" h="5" fontSize="9" wordWrap="0">IFNULL -&gt; {{expr: IFNULL(NULLIF(3, 3), 'was-null')}}</text>
+   <text name="l185" x="0" y="185" w="185" h="5" fontSize="9" wordWrap="0">COALESCE -&gt; {{expr: COALESCE(NULLIF(1,1), NULLIF(2,2), 'fallback')}}</text>
+   <text name="l190" x="0" y="190" w="185" h="5" fontSize="9" wordWrap="0">REGEXMATCH -&gt; {{expr: REGEXMATCH('abc123', '[a-z]+[0-9]+')}}</text>
+   <text name="l195" x="0" y="195" w="185" h="5" fontSize="9" wordWrap="0">REGEXREPLACE -&gt; {{expr: REGEXREPLACE('a1b2c3', '[0-9]', '#')}}</text>
+   <text name="l200" x="0" y="200" w="185" h="5" fontSize="9" wordWrap="0">REGEXEXTRACT -&gt; {{expr: REGEXEXTRACT('order 4567 ok', '[0-9]+')}}</text>
+  </band>
+ </bands>
+</report>

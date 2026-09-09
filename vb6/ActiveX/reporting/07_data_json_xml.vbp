@@ -1,0 +1,5 @@
+Type=Exe
+Module=mod07_data_json_xml; 07_data_json_xml.bas
+Startup="Sub Main"
+ExeName32="07_data_json_xml.exe"
+Name="07_data_json_xml"

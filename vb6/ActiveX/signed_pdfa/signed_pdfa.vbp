@@ -1,0 +1,5 @@
+Type=Exe
+Module=modSignedPDFA; signed_pdfa.bas
+Startup="Sub Main"
+ExeName32="signed_pdfa.exe"
+Name="signed_pdfa"

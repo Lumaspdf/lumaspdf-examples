@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="XmlCities" tagLangVersion="1">
+ <page width="210" height="297" marginLeft="15" marginTop="15" marginRight="15" marginBottom="15"/>
+ <datasources><datasource alias="x" provider="xml" conn="07_data.xml" query="rows/row"/></datasources>
+ <bands>
+  <band kind="reportheader" name="rh" height="10"><text name="ttl" x="0" y="0" w="180" h="8" fontSize="16" hAlign="center">Cities (XML source)</text></band>
+  <band kind="detail" name="xd" height="6" data="x">
+   <text name="c1" x="0" y="0" w="60" h="5" fontSize="9" wordWrap="0">{{x.City}}</text>
+   <text name="c2" x="60" y="0" w="30" h="5" fontSize="9" wordWrap="0">{{x.Country}}</text>
+   <text name="c3" x="90" y="0" w="40" h="5" fontSize="9" hAlign="right" wordWrap="0">{{x.Pop}}</text>
+  </band>
+ </bands>
+</report>

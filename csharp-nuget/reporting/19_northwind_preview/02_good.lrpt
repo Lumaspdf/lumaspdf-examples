@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="LicDemo" tagLangVersion="1">
+ <page width="210" height="297" marginLeft="15" marginTop="15" marginRight="15" marginBottom="15"/>
+ <bands>
+  <band kind="reportheader" name="rh" height="16">
+   <text name="t" x="0" y="0" w="180" h="10" fontSize="18" hAlign="center">License &amp; error demo</text>
+  </band>
+ </bands>
+</report>

@@ -1,0 +1,5 @@
+Type=Exe
+Module=modAnnotationTypes; annotation_types.bas
+Startup="Sub Main"
+ExeName32="annotation_types.exe"
+Name="annotation_types"

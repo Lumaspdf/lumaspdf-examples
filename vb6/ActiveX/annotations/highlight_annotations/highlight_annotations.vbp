@@ -1,0 +1,5 @@
+Type=Exe
+Module=modHighlightAnnotations; highlight_annotations.bas
+Startup="Sub Main"
+ExeName32="highlight_annotations.exe"
+Name="highlight_annotations"

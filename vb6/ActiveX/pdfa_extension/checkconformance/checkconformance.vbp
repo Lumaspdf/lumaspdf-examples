@@ -1,0 +1,5 @@
+Type=Exe
+Module=modCheckConformance; checkconformance.bas
+Startup="Sub Main"
+ExeName32="checkconformance.exe"
+Name="checkconformance"

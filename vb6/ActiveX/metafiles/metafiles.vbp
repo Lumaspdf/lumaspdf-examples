@@ -1,0 +1,5 @@
+Type=Exe
+Module=modMetafiles; metafiles.bas
+Startup="Sub Main"
+ExeName32="metafiles.exe"
+Name="metafiles"
