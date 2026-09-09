@@ -1,0 +1,5 @@
+Type=Exe
+Module=modSignatureAP; signature_ap.bas
+Startup="Sub Main"
+ExeName32="signature_ap.exe"
+Name="signature_ap"

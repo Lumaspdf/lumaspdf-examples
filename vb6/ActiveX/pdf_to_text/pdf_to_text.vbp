@@ -1,0 +1,5 @@
+Type=Exe
+Module=modPdfToText; pdf_to_text.bas
+Startup="Sub Main"
+ExeName32="pdf_to_text.exe"
+Name="pdf_to_text"

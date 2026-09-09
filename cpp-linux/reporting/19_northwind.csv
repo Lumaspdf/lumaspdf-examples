@@ -1,0 +1,78 @@
+CategoryName,ProductName,QuantityPerUnit,UnitPrice,UnitsInStock
+Beverages,Chai,10 boxes x 20 bags,18.00,39
+Beverages,Chang,24 - 12 oz bottles,19.00,17
+Beverages,Guaraná Fantástica,12 - 355 ml cans,4.50,20
+Beverages,Sasquatch Ale,24 - 12 oz bottles,14.00,111
+Beverages,Steeleye Stout,24 - 12 oz bottles,18.00,20
+Beverages,Côte de Blaye,12 - 75 cl bottles,263.50,17
+Beverages,Chartreuse verte,750 cc per bottle,18.00,69
+Beverages,Ipoh Coffee,16 - 500 g tins,46.00,17
+Beverages,Laughing Lumberjack Lager,24 - 12 oz bottles,14.00,52
+Beverages,Outback Lager,24 - 355 ml bottles,15.00,15
+Beverages,Rhönbräu Klosterbier,24 - 0.5 l bottles,7.75,125
+Beverages,Lakkalikööri,500 ml,18.00,57
+Condiments,Aniseed Syrup,12 - 550 ml bottles,10.00,13
+Condiments,Chef Anton's Cajun Seasoning,48 - 6 oz jars,22.00,53
+Condiments,Chef Anton's Gumbo Mix,36 boxes,21.35,0
+Condiments,Grandma's Boysenberry Spread,12 - 8 oz jars,25.00,120
+Condiments,Northwoods Cranberry Sauce,12 - 12 oz jars,40.00,6
+Condiments,Genen Shouyu,24 - 250 ml bottles,15.50,39
+Condiments,Gula Malacca,20 - 2 kg bags,19.45,27
+Condiments,Sirop d'érable,24 - 500 ml bottles,28.50,113
+Condiments,Vegie-spread,15 - 625 g jars,43.90,24
+Condiments,Louisiana Fiery Hot Pepper Sauce,32 - 8 oz bottles,21.05,76
+Condiments,Louisiana Hot Spiced Okra,24 - 8 oz jars,17.00,4
+Condiments,Original Frankfurter grüne Soße,12 boxes,13.00,32
+Confections,Pavlova,32 - 500 g boxes,17.45,29
+Confections,Teatime Chocolate Biscuits,10 boxes x 12 pieces,9.20,25
+Confections,Sir Rodney's Marmalade,30 gift boxes,81.00,40
+Confections,Sir Rodney's Scones,24 pkgs. x 4 pieces,10.00,3
+Confections,NuNuCa Nuß-Nougat-Creme,20 - 450 g glasses,14.00,76
+Confections,Gumbär Gummibärchen,100 - 250 g bags,31.23,15
+Confections,Schoggi Schokolade,100 - 100 g pieces,43.90,49
+Confections,Zaanse koeken,10 - 4 oz boxes,9.50,36
+Confections,Chocolade,10 pkgs.,12.75,15
+Confections,Maxilaku,24 - 50 g pkgs.,20.00,10
+Confections,Valkoinen suklaa,12 - 100 g bars,16.25,65
+Confections,Tarte au sucre,48 pies,49.30,17
+Confections,Scottish Longbreads,10 boxes x 8 pieces,12.50,6
+Dairy Products,Queso Cabrales,1 kg pkg.,21.00,22
+Dairy Products,Queso Manchego La Pastora,10 - 500 g pkgs.,38.00,86
+Dairy Products,Gorgonzola Telino,12 - 100 g pkgs,12.50,0
+Dairy Products,Mascarpone Fabioli,24 - 200 g pkgs.,32.00,9
+Dairy Products,Geitost,500 g,2.50,112
+Dairy Products,Raclette Courdavault,5 kg pkg.,55.00,79
+Dairy Products,Camembert Pierrot,15 - 300 g rounds,34.00,19
+Dairy Products,Gudbrandsdalsost,10 kg pkg.,36.00,26
+Dairy Products,Flotemysost,10 - 500 g pkgs.,21.50,26
+Dairy Products,Mozzarella di Giovanni,24 - 200 g pkgs.,34.80,14
+Grains/Cereals,Gustaf's Knäckebröd,24 - 500 g pkgs.,21.00,104
+Grains/Cereals,Tunnbröd,12 - 250 g pkgs.,9.00,61
+Grains/Cereals,Singaporean Hokkien Fried Mee,32 - 1 kg pkgs.,14.00,26
+Grains/Cereals,Filo Mix,16 - 2 kg boxes,7.00,38
+Grains/Cereals,Gnocchi di nonna Alice,24 - 250 g pkgs.,38.00,21
+Grains/Cereals,Ravioli Angelo,24 - 250 g pkgs.,19.50,36
+Grains/Cereals,Wimmers gute Semmelknödel,20 bags x 4 pieces,33.25,22
+Meat/Poultry,Mishi Kobe Niku,18 - 500 g pkgs.,97.00,29
+Meat/Poultry,Alice Mutton,20 - 1 kg tins,39.00,0
+Meat/Poultry,Thüringer Rostbratwurst,50 bags x 30 sausgs.,123.79,0
+Meat/Poultry,Perth Pasties,48 pieces,32.80,0
+Meat/Poultry,Tourtière,16 pies,7.45,21
+Meat/Poultry,Pâté chinois,24 boxes x 2 pies,24.00,115
+Produce,Uncle Bob's Organic Dried Pears,12 - 1 lb pkgs.,30.00,15
+Produce,Tofu,40 - 100 g pkgs.,23.25,35
+Produce,Rössle Sauerkraut,25 - 825 g cans,45.60,26
+Produce,Manjimup Dried Apples,50 - 300 g pkgs.,53.00,20
+Produce,Longlife Tofu,5 kg pkg.,10.00,4
+Seafood,Ikura,12 - 200 ml jars,31.00,31
+Seafood,Konbu,2 kg box,6.00,24
+Seafood,Carnarvon Tigers,16 kg pkg.,62.50,42
+Seafood,Nord-Ost Matjeshering,10 - 200 g glasses,25.89,10
+Seafood,Inlagd Sill,24 - 250 g  jars,19.00,112
+Seafood,Gravad lax,12 - 500 g pkgs.,26.00,11
+Seafood,Boston Crab Meat,24 - 4 oz tins,18.40,123
+Seafood,Jack's New England Clam Chowder,12 - 12 oz cans,9.65,85
+Seafood,Rogede sild,1k pkg.,9.50,5
+Seafood,Spegesild,4 - 450 g glasses,12.00,95
+Seafood,Escargots de Bourgogne,24 pieces,13.25,62
+Seafood,Röd Kaviar,24 - 150 g jars,15.00,101

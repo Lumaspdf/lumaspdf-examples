@@ -1,0 +1,7 @@
+Type=Exe
+Reference=*\G{E2FE2B22-5FF6-5275-A6E7-575E68D36DDD}#1.0#0#..\..\..\..\..\wrappers\activex\bin32\LumasPdfAX32.dll#LumasPdfAX
+Class=TextExtraction2Evt; text_extraction2Evt.cls
+Module=modTextExtraction2; text_extraction2.bas
+Startup="Sub Main"
+ExeName32="text_extraction2.exe"
+Name="text_extraction2"

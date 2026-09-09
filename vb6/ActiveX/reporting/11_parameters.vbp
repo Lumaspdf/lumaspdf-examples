@@ -1,0 +1,5 @@
+Type=Exe
+Module=mod11_parameters; 11_parameters.bas
+Startup="Sub Main"
+ExeName32="11_parameters.exe"
+Name="11_parameters"

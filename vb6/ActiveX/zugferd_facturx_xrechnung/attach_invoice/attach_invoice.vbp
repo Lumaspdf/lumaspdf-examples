@@ -1,0 +1,5 @@
+Type=Exe
+Module=modAttachInvoice; attach_invoice.bas
+Startup="Sub Main"
+ExeName32="attach_invoice.exe"
+Name="attach_invoice"

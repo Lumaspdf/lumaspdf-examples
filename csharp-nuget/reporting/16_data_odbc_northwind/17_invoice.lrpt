@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="Invoice" tagLangVersion="1">
+ <page width="210" height="297" marginLeft="15" marginTop="15" marginRight="15" marginBottom="15"/>
+ <datasources><datasource alias="d" provider="csv" conn="17_items.csv"/></datasources>
+ <styles>
+  <style name="h1" fontName="Helvetica" fontSize="22" bold="1"/>
+  <style name="lbl" fontName="Helvetica" fontSize="9" bold="1"/>
+  <style name="tot" fontName="Helvetica" fontSize="12" bold="1"/>
+ </styles>
+ <bands>
+  <band kind="reportheader" name="rh" height="30">
+   <text name="co"  x="0"   y="0"  w="110" h="10" fontSize="20" bold="1" wordWrap="0">ACME Corporation</text>
+   <text name="ti"  x="110" y="0"  w="70"  h="10" style="h1" hAlign="right" wordWrap="0">INVOICE</text>
+   <text name="m1"  x="0"   y="13" w="120" h="5"  fontSize="9" wordWrap="0">Invoice #: INV-1042    Date: 2026-07-19</text>
+   <text name="m2"  x="110" y="13" w="70"  h="5"  fontSize="9" hAlign="right" wordWrap="0">Terms: Net 30</text>
+   <line name="hr1" orient="h" scope="page" x="0" y="24" w="0" h="2" vAlign="middle" width="1.2" color="00CC0000"/>
+  </band>
+  <band kind="pageheader" name="ph" height="8">
+   <text name="ci" x="0"   y="0" w="78"  h="5" style="lbl" wordWrap="0">Description</text>
+   <text name="cq" x="80"  y="0" w="23"  h="5" style="lbl" hAlign="right" wordWrap="0">Qty</text>
+   <text name="cp" x="105" y="0" w="33"  h="5" style="lbl" hAlign="right" wordWrap="0">Unit Price</text>
+   <text name="ca" x="140" y="0" w="40"  h="5" style="lbl" hAlign="right" wordWrap="0">Amount</text>
+   <line name="phv1" orient="v" scope="section" x="79"  width="0.2" color="00909090"/>
+   <line name="phv2" orient="v" scope="section" x="104" width="0.2" color="00909090"/>
+   <line name="phv3" orient="v" scope="section" x="139" width="0.2" color="00909090"/>
+   <line name="hr2" orient="h" x="0" y="6" w="180" h="1" vAlign="middle" width="0.5" color="00404040"/>
+  </band>
+  <band kind="detail" name="det" height="6" data="d">
+   <text name="Description" x="0"   y="0" w="78"  h="5" fontSize="9" wordWrap="0">{{Item}}</text>
+   <text name="Qty"         x="80"  y="0" w="23"  h="5" fontSize="9" hAlign="right" wordWrap="0">{{Qty}}</text>
+   <text name="UnitPrice"   x="105" y="0" w="33"  h="5" fontSize="9" hAlign="right" wordWrap="0">{{expr: FORMATNUM('#,##0.00', Price)}}</text>
+   <text name="Amount"      x="140" y="0" w="40"  h="5" fontSize="9" hAlign="right" wordWrap="0">{{expr: FORMATNUM('#,##0.00', Qty*Price)}}</text>
+   <line name="dv1" orient="v" scope="section" x="79"  width="0.2" color="00CCCCCC"/>
+   <line name="dv2" orient="v" scope="section" x="104" width="0.2" color="00CCCCCC"/>
+   <line name="dv3" orient="v" scope="section" x="139" width="0.2" color="00CCCCCC"/>
+   <line name="rr" orient="h" x="0" y="0" w="180" h="5.5" vAlign="bottom" dash="dot" width="0.2" color="00AAAAAA"/>
+  </band>
+  <band kind="summary" name="sm" height="52">
+   <text name="sl1" x="115" y="1" w="30" h="5" style="lbl" wordWrap="0">Subtotal</text>
+   <text name="sv1" x="145" y="1" w="35" h="5" fontSize="9" hAlign="right" wordWrap="0">{{expr: FORMATNUM('#,##0.00', SUM(Qty*Price))}}</text>
+   <text name="sl2" x="115" y="7" w="30" h="5" style="lbl" wordWrap="0">Tax (10%)</text>
+   <text name="sv2" x="145" y="7" w="35" h="5" fontSize="9" hAlign="right" wordWrap="0">{{expr: FORMATNUM('#,##0.00', SUM(Qty*Price)*0.1)}}</text>
+   <line name="dl" orient="h" x="115" y="14" w="65" h="1" double="1" width="0.4" color="00404040"/>
+   <text name="tl" x="115" y="16" w="30" h="6" style="tot" wordWrap="0">TOTAL</text>
+   <text name="tv" x="140" y="16" w="40" h="6" style="tot" hAlign="right" wordWrap="0">{{expr: FORMATNUM('#,##0.00', SUM(Qty*Price)*1.1)}}</text>
+   <line name="ac" orient="h" x="115" y="24" w="65" h="1" double="1" dash="dot" width="0.35" color="000000CC"/>
+   <line name="sg" orient="h" x="0" y="40" w="70" h="1" dash="dash" width="0.4" cap="round" color="00404040"/>
+   <text name="sgl" x="0" y="41" w="70" h="5" fontSize="8" wordWrap="0">Authorized Signature</text>
+   <text name="pd" x="127" y="34" w="40" h="7" style="tot" wordWrap="0">PAID</text>
+   <line name="fr" orient="h" x="127" y="43" length="24" width="1.0" cap="round" color="000000CC"/>
+  </band>
+ </bands>
+</report>

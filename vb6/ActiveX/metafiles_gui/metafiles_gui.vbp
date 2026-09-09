@@ -1,0 +1,5 @@
+Type=Exe
+Form=metafiles_gui.frm
+Startup="frmMetafilesGui"
+ExeName32="metafiles_gui.exe"
+Name="metafiles_gui"

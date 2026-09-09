@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="TagTour" tagLangVersion="1">
+ <page width="210" height="297" marginLeft="12" marginTop="12" marginRight="12" marginBottom="12"/>
+ <datasources>
+  <datasource alias="d" provider="csv" conn="15_data.csv"/>
+ </datasources>
+ <params>
+  <param name="Name" default="(unset)"/>
+ </params>
+ <bands>
+  <band kind="reportheader" name="rh" height="120">
+   <text name="h"   x="0" y="0"  w="186" h="8" fontSize="16" hAlign="center">Tag &amp; formatting tour</text>
+   <text name="ex"  x="0" y="12" w="186" h="6" fontSize="11">expr 2+3*4 = {{expr: 2+3*4 }}</text>
+   <text name="vr"  x="0" y="20" w="186" h="6" fontSize="11">var:Name = {{var:Name}}</text>
+   <text name="fn"  x="0" y="28" w="186" h="6" fontSize="11">FORMATNUM = {{expr: FORMATNUM('#,##0.00', 1234.5) }}</text>
+   <text name="fd"  x="0" y="36" w="186" h="6" fontSize="11">FORMATDATE = {{expr: FORMATDATE('yyyy-mm-dd', TODAY()) }}</text>
+   <text name="esc" x="0" y="44" w="186" h="6" fontSize="11">escape literal = {{{{ }}</text>
+   <text name="a0" x="0" y="56" w="186" h="6" fontSize="10" hAlign="0">hAlign 0 = left</text>
+   <text name="a1" x="0" y="63" w="186" h="6" fontSize="10" hAlign="1">hAlign 1 = center</text>
+   <text name="a2" x="0" y="70" w="186" h="6" fontSize="10" hAlign="2">hAlign 2 = right</text>
+   <text name="a3" x="0" y="77" w="186" h="6" fontSize="10" hAlign="3">hAlign 3 = justify this line so it spreads across the whole width of the box evenly</text>
+   <text name="v0" x="0"   y="92" w="60" h="20" fontSize="9" vAlign="0">vAlign 0 top</text>
+   <text name="v1" x="63"  y="92" w="60" h="20" fontSize="9" vAlign="1">vAlign 1 middle</text>
+   <text name="v2" x="126" y="92" w="60" h="20" fontSize="9" vAlign="2">vAlign 2 bottom</text>
+  </band>
+  <band kind="detail" name="rows" height="7" data="d">
+   <text name="r" x="0" y="0" w="186" h="6" fontSize="11">row: fields.d.Col={{fields.d.Col}}  bare d.Col={{d.Col}}  note={{d.Note}}</text>
+  </band>
+ </bands>
+</report>

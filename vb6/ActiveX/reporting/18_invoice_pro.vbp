@@ -1,0 +1,5 @@
+Type=Exe
+Module=mod18_invoice_pro; 18_invoice_pro.bas
+Startup="Sub Main"
+ExeName32="18_invoice_pro.exe"
+Name="18_invoice_pro"

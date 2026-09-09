@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="InvoicePro" tagLangVersion="1">
+ <page width="210" height="297" marginLeft="14" marginTop="14" marginRight="14" marginBottom="16"/>
+ <datasources><datasource alias="d" provider="csv" conn="18_items.csv"/></datasources>
+ <variables><variable name="PageNo" init="1"/></variables>
+ <styles>
+  <style name="brand"  fontName="Helvetica" fontSize="20" bold="1" textColor="005F3A1F"/>
+  <style name="addr"   fontName="Helvetica" fontSize="8"  textColor="00808080"/>
+  <style name="title"  fontName="Helvetica" fontSize="30" bold="1" textColor="005F3A1F" hAlign="right"/>
+  <style name="mlbl"   fontName="Helvetica" fontSize="8.5" bold="1" textColor="00808080" hAlign="right"/>
+  <style name="mval"   fontName="Helvetica" fontSize="8.5" textColor="00222222" hAlign="right"/>
+  <style name="billto" fontName="Helvetica" fontSize="8" bold="1" textColor="005F3A1F"/>
+  <style name="cust"   fontName="Helvetica" fontSize="9.5" textColor="00222222"/>
+  <style name="colh"   fontName="Helvetica" fontSize="8.5" bold="1" textColor="00FFFFFF"/>
+  <style name="colhr"  fontName="Helvetica" fontSize="8.5" bold="1" textColor="00FFFFFF" hAlign="right"/>
+  <style name="cell"   fontName="Helvetica" fontSize="9.5" textColor="00222222"/>
+  <style name="cellr"  fontName="Helvetica" fontSize="9.5" textColor="00222222" hAlign="right"/>
+  <style name="tlbl"   fontName="Helvetica" fontSize="9.5" bold="1" textColor="00222222" hAlign="right"/>
+  <style name="tval"   fontName="Helvetica" fontSize="9.5" textColor="00222222" hAlign="right"/>
+  <style name="glbl"   fontName="Helvetica" fontSize="13" bold="1" textColor="00FFFFFF"/>
+  <style name="gval"   fontName="Helvetica" fontSize="13" bold="1" textColor="00FFFFFF" hAlign="right"/>
+  <style name="note"   fontName="Helvetica" fontSize="8.5" textColor="00808080"/>
+  <style name="foot"   fontName="Helvetica" fontSize="8" textColor="00808080"/>
+  <style name="footr"  fontName="Helvetica" fontSize="8" textColor="00808080" hAlign="right"/>
+ </styles>
+ <bands>
+  <band kind="reportheader" name="rh" height="42">
+   <text name="co"   x="0"  y="0"  w="110" h="9" style="brand" wordWrap="0">ACME Corporation</text>
+   <text name="a1"   x="0"  y="10" w="120" h="4" style="addr" wordWrap="0">123 Industrial Way  �  Springfield, IL 62704</text>
+   <text name="a2"   x="0"  y="14" w="120" h="4" style="addr" wordWrap="0">+1 (555) 018-2245  �  billing@acme.example</text>
+   <text name="ti"   x="92" y="0"  w="90"  h="13" style="title" wordWrap="0">INVOICE</text>
+   <text name="ml1"  x="108" y="15" w="40" h="4" style="mlbl" wordWrap="0">INVOICE #</text>
+   <text name="mv1"  x="150" y="15" w="32" h="4" style="mval" wordWrap="0">INV-1042</text>
+   <text name="ml2"  x="108" y="20" w="40" h="4" style="mlbl" wordWrap="0">ISSUE DATE</text>
+   <text name="mv2"  x="150" y="20" w="32" h="4" style="mval" wordWrap="0">2026-07-19</text>
+   <text name="ml3"  x="108" y="25" w="40" h="4" style="mlbl" wordWrap="0">DUE DATE</text>
+   <text name="mv3"  x="150" y="25" w="32" h="4" style="mval" wordWrap="0">2026-08-18</text>
+   <text name="bt"   x="0"  y="25" w="60" h="4" style="billto" wordWrap="0">BILL TO</text>
+   <text name="c1"   x="0"  y="29.5" w="95" h="4.5" style="cust" wordWrap="0">Globex Manufacturing Co.</text>
+   <text name="c2"   x="0"  y="33.5" w="95" h="4" style="addr" wordWrap="0">500 Commerce Blvd, Metropolis, NY 10001</text>
+   <line name="rht" orient="h" scope="section" vAlign="top"    width="0.3" color="00D8D8D8"/>
+   <line name="rhb" orient="h" scope="section" vAlign="bottom" width="1.1" color="005F3A1F"/>
+  </band>
+  <band kind="pageheader" name="ph" height="8">
+   <shape name="bar" x="0" y="0" w="182" h="8" shape="0" backColor="005F3A1F"/>
+   <text name="hI" x="3"   y="2" w="88" h="5" style="colh"  wordWrap="0">DESCRIPTION</text>
+   <text name="hQ" x="97"  y="2" w="16" h="5" style="colhr" wordWrap="0">QTY</text>
+   <text name="hP" x="119" y="2" w="26" h="5" style="colhr" wordWrap="0">UNIT PRICE</text>
+   <text name="hA" x="151" y="2" w="29" h="5" style="colhr" wordWrap="0">AMOUNT</text>
+   <line name="phga" orient="v" scope="section" x="0"   width="0.35" color="00B9B9B9"/>
+   <line name="phgb" orient="v" scope="section" x="95"  width="0.35" color="00B9B9B9"/>
+   <line name="phgc" orient="v" scope="section" x="117" width="0.35" color="00B9B9B9"/>
+   <line name="phgd" orient="v" scope="section" x="149" width="0.35" color="00B9B9B9"/>
+   <line name="phge" orient="v" scope="section" x="182" width="0.35" color="00B9B9B9"/>
+ </band>
+  <band kind="detail" name="det" height="7" data="d">
+   <shape name="zebra" x="0" y="0" w="182" h="7" shape="0" backColor="00F4F1EC" visible="RowNum % 2 = 0"/>
+   <text name="dI" x="3"   y="1.6" w="90" h="4" style="cell"  wordWrap="0">{{Item}}</text>
+   <text name="dQ" x="97"  y="1.6" w="16" h="4" style="cellr" wordWrap="0">{{Qty}}</text>
+   <text name="dP" x="119" y="1.6" w="26" h="4" style="cellr" wordWrap="0">{{expr: FORMATNUM('#,##0.00', Price)}}</text>
+   <text name="dA" x="151" y="1.6" w="29" h="4" style="cellr" wordWrap="0">{{expr: FORMATNUM('#,##0.00', Qty*Price)}}</text>
+   <line name="dga" orient="v" scope="section" x="0"   width="0.35" color="00B9B9B9"/>
+   <line name="dgb" orient="v" scope="section" x="95"  width="0.35" color="00B9B9B9"/>
+   <line name="dgc" orient="v" scope="section" x="117" width="0.35" color="00B9B9B9"/>
+   <line name="dgd" orient="v" scope="section" x="149" width="0.35" color="00B9B9B9"/>
+   <line name="dge" orient="v" scope="section" x="182" width="0.35" color="00B9B9B9"/>
+   <line name="drb" orient="h" scope="section" vAlign="bottom" width="0.2" color="00D8D8D8"/>
+  </band>
+  <band kind="summary" name="sm" height="46">
+   <line name="stop" orient="h" scope="section" vAlign="top" width="0.6" color="005F3A1F"/>
+   <text name="nh" x="0" y="4"  w="95" h="4" style="billto" wordWrap="0">NOTES</text>
+   <text name="n1" x="0" y="8.5" w="100" h="4" style="note" wordWrap="0">Payment due within 30 days. Bank transfer to</text>
+   <text name="n2" x="0" y="12"  w="100" h="4" style="note" wordWrap="0">ACME Corp � IBAN GB00 ACME 0000 1042 � Ref INV-1042.</text>
+   <text name="s1l" x="100" y="4"  w="45" h="4.5" style="tlbl" wordWrap="0">Subtotal</text>
+   <text name="s1v" x="149" y="4"  w="31" h="4.5" style="tval" wordWrap="0">{{expr: FORMATNUM('#,##0.00', SUM(Qty*Price))}}</text>
+   <text name="s2l" x="100" y="9.5" w="45" h="4.5" style="tlbl" wordWrap="0">Tax (8.5%)</text>
+   <text name="s2v" x="149" y="9.5" w="31" h="4.5" style="tval" wordWrap="0">{{expr: FORMATNUM('#,##0.00', SUM(Qty*Price)*0.085)}}</text>
+   <shape name="gbar" x="100" y="16" w="82" h="10" shape="0" backColor="005F3A1F"/>
+   <text name="gl" x="104" y="18.5" w="40" h="6" style="glbl" wordWrap="0">TOTAL</text>
+   <text name="gv" x="149" y="18.5" w="29" h="6" style="gval" wordWrap="0">{{expr: FORMATNUM('#,##0.00', SUM(Qty*Price)*1.085)}}</text>
+   <text name="gc" x="100" y="28" w="82" h="4" style="footr" wordWrap="0">USD � Total items {{expr: COUNT()}}</text>
+  </band>
+  <band kind="pagefooter" name="pf" height="12">
+   <line name="pft" orient="h" scope="section" vAlign="top" width="0.3" color="00B9B9B9"/>
+   <text name="ty" x="0"   y="3" w="120" h="4" style="foot"  wordWrap="0">Thank you for your business.  Questions? billing@acme.example</text>
+   <text name="pg" x="120" y="3" w="62"  h="4" style="footr" wordWrap="0">Page {{var:PageNo}} of {{var:TotalPages}}</text>
+  </band>
+ </bands>
+</report>

@@ -1,0 +1,5 @@
+Type=Exe
+Module=modRenderPage; render_page.bas
+Startup="Sub Main"
+ExeName32="render_page.exe"
+Name="render_page"

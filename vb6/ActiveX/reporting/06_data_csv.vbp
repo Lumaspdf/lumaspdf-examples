@@ -1,0 +1,5 @@
+Type=Exe
+Module=mod06_data_csv; 06_data_csv.bas
+Startup="Sub Main"
+ExeName32="06_data_csv.exe"
+Name="06_data_csv"

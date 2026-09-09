@@ -1,0 +1,5 @@
+Type=Exe
+Module=mod09_expressions; 09_expressions.bas
+Startup="Sub Main"
+ExeName32="09_expressions.exe"
+Name="09_expressions"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report name="JsonCities" tagLangVersion="1">
+ <page width="210" height="297" marginLeft="15" marginTop="15" marginRight="15" marginBottom="15"/>
+ <datasources><datasource alias="j" provider="json" conn="07_data.json" query=""/></datasources>
+ <bands>
+  <band kind="reportheader" name="rh" height="10">
+   <text name="ttl" x="0" y="0" w="180" h="8" fontSize="16" hAlign="center">Cities (JSON source)</text>
+  </band>
+  <band kind="detail" name="jd" height="6" data="j">
+   <text name="c1" x="0"  y="0" w="60" h="5" fontSize="9" wordWrap="0">{{j.City}}</text>
+   <text name="c2" x="60" y="0" w="30" h="5" fontSize="9" wordWrap="0">{{j.Country}}</text>
+   <text name="c3" x="90" y="0" w="40" h="5" fontSize="9" hAlign="right" wordWrap="0">{{j.Pop}}</text>
+  </band>
+ </bands>
+</report>

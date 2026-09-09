@@ -1,0 +1,5 @@
+Type=Exe
+Module=modAlphaTransparency; alpha_transparency.bas
+Startup="Sub Main"
+ExeName32="alpha_transparency.exe"
+Name="alpha_transparency"

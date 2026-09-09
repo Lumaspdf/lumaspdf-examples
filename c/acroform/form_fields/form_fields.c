@@ -1,0 +1,129 @@
+/* form_fields -- C (x64) port of examples\Vb6\acroform\form_fields.bas */
+#include <stdio.h>
+#include <string.h>
+#include "lumaspdf.h"
+
+static SI32 PDF_CALL ErrProc(void* Data, SI32 ErrCode, const char* ErrMessage, SI32 ErrType)
+{
+    (void)Data; (void)ErrCode; (void)ErrType;
+    if (ErrMessage) printf("%s\n", ErrMessage);
+    return 0;
+}
+
+static void exedir(const char* a0, char* out, size_t n){char* s;strncpy(out,a0,n-1);out[n-1]=0;s=strrchr(out,'\\');if(!s)s=strrchr(out,'/');if(s)*s=0;else strcpy(out,".");}
+
+int main(int argc, char** argv)
+{
+    SI32 f, r;
+    double y;
+    PPDF pdf;
+    char dir[1024], outFile[1200];
+
+    exedir(argv[0], dir, sizeof(dir));
+    (void)argc;
+
+    pdf = pdfNewPDF();
+    pdfSetOnErrorProc(pdf, 0, ErrProc);
+    pdfCreateNewPDFA(pdf, "");
+
+    pdfSetPageCoords(pdf, pcTopDown);
+
+    pdfAppend(pdf);
+    y = 50.0;
+    pdfSetFontA(pdf, "Helvetica", fsRegular, 10.0, 0, cp1252);
+    pdfWriteTextA(pdf, 50.0, y, "Text fields:");
+
+    y = y + 15.0;
+    f = pdfCreateTextField(pdf, "Text1", -1, 0, 0, 50.0, y, 200.0, 20.0);
+    pdfSetTextFieldValueA(pdf, f, "", "Single line text...", taLeft);
+
+    y = y + 30.0;
+    f = pdfCreateTextField(pdf, "Text2", -1, 1, 0, 50.0, y, 200.0, 50.0);
+    pdfSetTextFieldValueA(pdf, f, "", "This field accepts multi-line text. The maximum text length can be restricted if necessary.", taLeft);
+
+    y = y + 60.0;
+    pdfWriteTextA(pdf, 50.0, y, "A password field:");
+    y = y + 15.0;
+    f = pdfCreateTextField(pdf, "Text3", -1, 0, 0, 50.0, y, 200.0, 20.0);
+    pdfSetFieldFlags(pdf, f, ffPassword, 0);
+    pdfSetTextFieldValueA(pdf, f, "", "**********", taLeft);
+
+    y = y + 30.0;
+    pdfWriteTextA(pdf, 50.0, y, "A fixed length field separated into combs:");
+    y = y + 15.0;
+    f = pdfCreateTextField(pdf, "Text4", -1, 0, 10, 50.0, y, 200.0, 20.0);
+    pdfSetFieldFlags(pdf, f, ffComb, 0);
+
+    y = 50.0;
+    pdfWriteTextA(pdf, 350.0, y, "Choice fields:");
+    y = y + 15.0;
+    f = pdfCreateComboBox(pdf, "Combo1", 1, -1, 350.0, y, 200.0, 20.0);
+    pdfAddValToChoiceFieldA(pdf, f, "", " Select a value...", 1);
+    pdfAddValToChoiceFieldA(pdf, f, "Apple", "Apple", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Banana", "Banana", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Pear", "Pear", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Grape", "Grape", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Orange", "Orange", 0);
+
+    y = y + 30.0;
+    f = pdfCreateListBox(pdf, "List", 1, -1, 350.0, y, 200.0, 50.0);
+    pdfAddValToChoiceFieldA(pdf, f, "Apple", "Apple", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Banana", "Banana", 1);
+    pdfAddValToChoiceFieldA(pdf, f, "Pear", "Pear", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Grape", "Grape", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Orange", "Orange", 0);
+
+    y = y + 60.0;
+    pdfWriteTextA(pdf, 350.0, y, "Editable combo box:");
+    y = y + 15.0;
+    f = pdfCreateComboBox(pdf, "Combo2", 1, -1, 350.0, y, 200.0, 20.0);
+    pdfAddValToChoiceFieldA(pdf, f, "Apple", "Apple", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Banana", "Banana", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Pear", "Pear", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Grape", "Grape", 0);
+    pdfAddValToChoiceFieldA(pdf, f, "Orange", "Orange", 0);
+    pdfSetFieldFlags(pdf, f, ffEdit, 0);
+    pdfSetFieldExpValueA(pdf, f, 1000, "Select or enter a value...", "", 1);
+
+    y = y + 30.0;
+    pdfWriteTextA(pdf, 350.0, y, "Check boxes / Radio buttons:");
+
+    y = y + 15.0;
+    pdfChangeFontSize(pdf, 1.0);
+    pdfCreateCheckBox(pdf, "N1", "C1", 1, -1, 350.0, y, 20.0, 20.0);
+    pdfCreateCheckBox(pdf, "N2", "C2", 1, -1, 380.0, y, 20.0, 20.0);
+    pdfCreateCheckBox(pdf, "N3", "C1", 1, -1, 410.0, y, 20.0, 20.0);
+
+    pdfCreateCheckBox(pdf, "G1", "C1", 0, -1, 450.0, y, 20.0, 20.0);
+    pdfCreateCheckBox(pdf, "G1", "C2", 0, -1, 480.0, y, 20.0, 20.0);
+    pdfCreateCheckBox(pdf, "G1", "C1", 1, -1, 510.0, y, 20.0, 20.0);
+    pdfCreateCheckBox(pdf, "G1", "C2", 0, -1, 540.0, y, 20.0, 20.0);
+
+    y = y + 30.0;
+    pdfChangeFontSize(pdf, 15.0);
+    pdfSetCheckBoxChar(pdf, ccCircle);
+    r = pdfCreateRadioButton(pdf, "Radio1", "R1", 1, -1, 350.0, y, 20.0, 20.0);
+    pdfSetCheckBoxDefState(pdf, r, 0);
+    pdfCreateCheckBox(pdf, "", "R2", 0, r, 380.0, y, 20.0, 20.0);
+    pdfCreateCheckBox(pdf, "", "R3", 0, r, 410.0, y, 20.0, 20.0);
+
+    r = pdfCreateRadioButton(pdf, "Radio2", "R1", 1, -1, 450.0, y, 20.0, 20.0);
+    pdfSetFieldFlags(pdf, r, ffRadioIsUnion, 0);
+    pdfCreateCheckBox(pdf, "", "R2", 0, r, 480.0, y, 20.0, 20.0);
+    pdfCreateCheckBox(pdf, "", "R1", 1, r, 510.0, y, 20.0, 20.0);
+    pdfCreateCheckBox(pdf, "", "R2", 0, r, 540.0, y, 20.0, 20.0);
+    pdfEndPage(pdf);
+
+    if (pdfHaveOpenDoc(pdf) != 0) {
+        _snprintf(outFile, sizeof(outFile), "%s\\out.pdf", dir);
+        if (pdfOpenOutputFileA(pdf, outFile) == 0) {
+            pdfDeletePDF(pdf);
+            return 0;
+        }
+        if (pdfCloseFile(pdf) != 0)
+            printf("PDF file \"%s\" successfully created!\n", outFile);
+    }
+
+    pdfDeletePDF(pdf);
+    return 0;
+}

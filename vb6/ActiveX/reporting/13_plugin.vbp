@@ -1,0 +1,5 @@
+Type=Exe
+Module=mod13_plugin; 13_plugin.bas
+Startup="Sub Main"
+ExeName32="13_plugin.exe"
+Name="13_plugin"

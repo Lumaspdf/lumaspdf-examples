@@ -1,0 +1,5 @@
+Type=Exe
+Module=mod10_aggregates_groups; 10_aggregates_groups.bas
+Startup="Sub Main"
+ExeName32="10_aggregates_groups.exe"
+Name="10_aggregates_groups"

@@ -1,0 +1,5 @@
+Type=Exe
+Module=mod05_elements; 05_elements.bas
+Startup="Sub Main"
+ExeName32="05_elements.exe"
+Name="05_elements"
