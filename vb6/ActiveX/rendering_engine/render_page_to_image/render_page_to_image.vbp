@@ -1,5 +1,0 @@
-Type=Exe
-Module=modRenderPageToImage; render_page_to_image.bas
-Startup="Sub Main"
-ExeName32="render_page_to_image.exe"
-Name="render_page_to_image"

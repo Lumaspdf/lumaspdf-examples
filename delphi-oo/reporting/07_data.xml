@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rows>
- <row City="Berlin" Country="DE" Pop="3600"/>
- <row City="Munich" Country="DE" Pop="1500"/>
- <row City="Hamburg" Country="DE" Pop="1900"/>
-</rows>

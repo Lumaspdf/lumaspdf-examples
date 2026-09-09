@@ -1,5 +1,0 @@
-Type=Exe
-Module=modFormFields; form_fields.bas
-Startup="Sub Main"
-ExeName32="form_fields.exe"
-Name="form_fields"

@@ -1,5 +1,0 @@
-Type=Exe
-Module=modFieldGroups; field_groups.bas
-Startup="Sub Main"
-ExeName32="field_groups.exe"
-Name="field_groups"

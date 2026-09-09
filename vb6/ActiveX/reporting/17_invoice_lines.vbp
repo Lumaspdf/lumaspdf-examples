@@ -1,5 +1,0 @@
-Type=Exe
-Module=mod17_invoice_lines; 17_invoice_lines.bas
-Startup="Sub Main"
-ExeName32="17_invoice_lines.exe"
-Name="17_invoice_lines"

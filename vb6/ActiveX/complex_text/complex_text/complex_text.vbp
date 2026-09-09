@@ -1,5 +1,0 @@
-Type=Exe
-Module=modComplexText; complex_text.bas
-Startup="Sub Main"
-ExeName32="complex_text.exe"
-Name="complex_text"

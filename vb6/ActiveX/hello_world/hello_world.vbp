@@ -1,5 +1,0 @@
-Type=Exe
-Module=modHelloWorld; hello_world.bas
-Startup="Sub Main"
-ExeName32="hello_world.exe"
-Name="hello_world"

@@ -1,5 +1,0 @@
-Type=Exe
-Module=modExtractInvoice; extract_invoice.bas
-Startup="Sub Main"
-ExeName32="extract_invoice.exe"
-Name="extract_invoice"

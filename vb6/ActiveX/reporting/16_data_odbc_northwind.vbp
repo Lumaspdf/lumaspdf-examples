@@ -1,5 +1,0 @@
-Type=Exe
-Module=mod16_data_odbc_northwind; 16_data_odbc_northwind.bas
-Startup="Sub Main"
-ExeName32="16_data_odbc_northwind.exe"
-Name="16_data_odbc_northwind"

@@ -1,5 +1,0 @@
-Type=Exe
-Module=modMergePdf; merge_pdf.bas
-Startup="Sub Main"
-ExeName32="merge_pdf.exe"
-Name="merge_pdf"

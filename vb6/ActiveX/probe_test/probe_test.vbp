@@ -1,5 +1,0 @@
-Type=Exe
-Module=modProbeTest; probe_test.bas
-Startup="Sub Main"
-ExeName32="probe_test.exe"
-Name="probe_test"

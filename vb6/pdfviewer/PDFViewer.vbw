@@ -1,7 +1,0 @@
-LumasPDFInt = 0, 0, 0, 0, C
-LumasPDFInt2 = 0, 0, 0, 0, C
-CPDF = 0, 0, 0, 0, C
-CPDFTable = 0, 0, 0, 0, C
-CPDFContentParser = 0, 0, 0, 0, C
-IPDFCallBack = 0, 0, 0, 0, C
-modPDFViewer = 26, 26, 1134, 460, Z

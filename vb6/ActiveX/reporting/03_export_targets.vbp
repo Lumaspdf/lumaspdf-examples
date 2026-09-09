@@ -1,5 +1,0 @@
-Type=Exe
-Module=mod03_export_targets; 03_export_targets.bas
-Startup="Sub Main"
-ExeName32="03_export_targets.exe"
-Name="03_export_targets"

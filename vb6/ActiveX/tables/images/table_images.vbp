@@ -1,5 +1,0 @@
-Type=Exe
-Module=modTableImages; table_images.bas
-Startup="Sub Main"
-ExeName32="table_images.exe"
-Name="table_images"

@@ -1,5 +1,0 @@
-Type=Exe
-Module=modSmoke; smoke_test.bas
-Startup="Sub Main"
-ExeName32="smoke_test.exe"
-Name="smoke_test"

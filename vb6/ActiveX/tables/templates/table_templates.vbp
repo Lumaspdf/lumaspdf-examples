@@ -1,5 +1,0 @@
-Type=Exe
-Module=modTableTemplates; table_templates.bas
-Startup="Sub Main"
-ExeName32="table_templates.exe"
-Name="table_templates"

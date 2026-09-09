@@ -1,5 +1,0 @@
-Type=Exe
-Module=modOptimize; optimize.bas
-Startup="Sub Main"
-ExeName32="optimize.exe"
-Name="optimize"

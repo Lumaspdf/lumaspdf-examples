@@ -1,5 +1,0 @@
-Type=Exe
-Module=modMultipleSignatures; multiple_signatures.bas
-Startup="Sub Main"
-ExeName32="multiple_signatures.exe"
-Name="multiple_signatures"

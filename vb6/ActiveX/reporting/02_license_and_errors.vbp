@@ -1,5 +1,0 @@
-Type=Exe
-Module=mod02_license_and_errors; 02_license_and_errors.bas
-Startup="Sub Main"
-ExeName32="02_license_and_errors.exe"
-Name="02_license_and_errors"

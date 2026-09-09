@@ -1,5 +1,0 @@
-Type=Exe
-Module=mod04_bands; 04_bands.bas
-Startup="Sub Main"
-ExeName32="04_bands.exe"
-Name="04_bands"

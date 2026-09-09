@@ -1,5 +1,0 @@
-Type=Exe
-Module=modBookmarks; bookmarks.bas
-Startup="Sub Main"
-ExeName32="bookmarks.exe"
-Name="bookmarks"

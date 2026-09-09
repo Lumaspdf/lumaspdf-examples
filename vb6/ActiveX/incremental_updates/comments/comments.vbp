@@ -1,5 +1,0 @@
-Type=Exe
-Module=modComments; comments.bas
-Startup="Sub Main"
-ExeName32="comments.exe"
-Name="comments"

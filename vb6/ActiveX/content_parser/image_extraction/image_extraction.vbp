@@ -1,7 +1,0 @@
-Type=Exe
-Reference=*\G{E2FE2B22-5FF6-5275-A6E7-575E68D36DDD}#1.0#0#..\..\..\..\..\wrappers\activex\bin32\LumasPdfAX32.dll#LumasPdfAX
-Class=ImageExtractionEvt; image_extractionEvt.cls
-Module=modImageExtraction; image_extraction.bas
-Startup="Sub Main"
-ExeName32="image_extraction.exe"
-Name="image_extraction"

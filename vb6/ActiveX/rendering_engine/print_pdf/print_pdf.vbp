@@ -1,5 +1,0 @@
-Type=Exe
-Module=modPrintPdf; print_pdf.bas
-Startup="Sub Main"
-ExeName32="print_pdf.exe"
-Name="print_pdf"

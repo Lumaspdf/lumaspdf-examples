@@ -1,5 +1,0 @@
-Type=Exe
-Module=mod12_custom_function; 12_custom_function.bas
-Startup="Sub Main"
-ExeName32="12_custom_function.exe"
-Name="12_custom_function"

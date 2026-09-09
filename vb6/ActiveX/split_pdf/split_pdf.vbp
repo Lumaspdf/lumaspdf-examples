@@ -1,5 +1,0 @@
-Type=Exe
-Module=modSplitPdf; split_pdf.bas
-Startup="Sub Main"
-ExeName32="split_pdf.exe"
-Name="split_pdf"

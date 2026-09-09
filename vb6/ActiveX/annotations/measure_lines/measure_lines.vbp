@@ -1,5 +1,0 @@
-Type=Exe
-Module=modMeasureLines; measure_lines.bas
-Startup="Sub Main"
-ExeName32="measure_lines.exe"
-Name="measure_lines"

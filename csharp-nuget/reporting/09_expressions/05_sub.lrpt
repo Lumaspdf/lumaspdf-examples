@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<report name="Sub" tagLangVersion="1">
- <page width="70" height="30" marginLeft="1" marginTop="1" marginRight="1" marginBottom="1"/>
- <bands>
-  <band kind="reportheader" name="sh" height="10">
-   <text name="st" x="0" y="0" w="66" h="6" fontSize="8">Subreport content here.</text>
-  </band>
- </bands>
-</report>

@@ -1,5 +1,0 @@
-Type=Exe
-Module=modAlternateFonts; alternate_fonts.bas
-Startup="Sub Main"
-ExeName32="alternate_fonts.exe"
-Name="alternate_fonts"

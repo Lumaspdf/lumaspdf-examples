@@ -1,5 +1,0 @@
-Type=Exe
-Module=modConvToZugferd; conv_to_zugferd.bas
-Startup="Sub Main"
-ExeName32="conv_to_zugferd.exe"
-Name="conv_to_zugferd"

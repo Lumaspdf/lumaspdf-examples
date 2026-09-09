@@ -1,5 +1,0 @@
-Type=Exe
-Module=modTextExtraction3; text_extraction3.bas
-Startup="Sub Main"
-ExeName32="text_extraction3.exe"
-Name="text_extraction3"

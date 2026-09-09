@@ -1,5 +1,0 @@
-Type=Exe
-Module=modCheckBoxes; check_boxes.bas
-Startup="Sub Main"
-ExeName32="check_boxes.exe"
-Name="check_boxes"

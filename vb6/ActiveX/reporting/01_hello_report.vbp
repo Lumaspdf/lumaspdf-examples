@@ -1,5 +1,0 @@
-Type=Exe
-Module=mod01_hello_report; 01_hello_report.bas
-Startup="Sub Main"
-ExeName32="01_hello_report.exe"
-Name="01_hello_report"

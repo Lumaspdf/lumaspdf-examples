@@ -1,5 +1,0 @@
-Type=Exe
-Module=modBarcodes; barcodes.bas
-Startup="Sub Main"
-ExeName32="barcodes.exe"
-Name="barcodes"

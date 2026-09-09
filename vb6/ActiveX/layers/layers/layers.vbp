@@ -1,5 +1,0 @@
-Type=Exe
-Module=modLayers; layers.bas
-Startup="Sub Main"
-ExeName32="layers.exe"
-Name="layers"
