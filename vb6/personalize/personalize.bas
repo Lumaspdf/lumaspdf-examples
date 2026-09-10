@@ -57,11 +57,11 @@ Public Sub Main()
     pdf.WriteText 53#, 48#, CStr(Now)
     pdf.SetFillColor RGB(&HFF, &H66, &H66)
     pdf.SetFont "Helvetica", fsBold, 22#, 0, cp1252
-    pdf.WriteText 340#, 70#, "www.dynaforms.de"
+    pdf.WriteText 340#, 70#, "www.lumaspdf.com"
     pdf.SetLineWidth 0#
     pdf.SetLinkHighlightMode hmPush
     pdf.SetAnnotFlags afReadOnly
-    pdf.WebLinkA 340#, 64#, 204#, 22#, "http://www.dynaforms.de"
+    pdf.WebLinkA 340#, 64#, 204#, 22#, "https://www.lumaspdf.com"
     pdf.EndPage
 
     ' No fatal error occurred?

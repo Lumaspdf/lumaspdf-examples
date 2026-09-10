@@ -54,7 +54,7 @@ class LayerTree
         double tw = LumasPdf.pdfGetTextWidthW(pdf, someText);
         LumasPdf.pdfSetBorderStyle(pdf, (int)TBorderStyle.bsUnderline);
         LumasPdf.pdfSetStrokeColor(pdf, clBlue);
-        int annot = LumasPdf.pdfWebLinkW(pdf, 50.0, 51.0, tw, 12.0, "www.dynaforms.com");
+        int annot = LumasPdf.pdfWebLinkW(pdf, 50.0, 51.0, tw, 12.0, "www.lumaspdf.com");
 
         uint[] ocArray = new uint[] { (uint)oc1, (uint)oc2 };
         int ocmd = LumasPdf.pdfCreateOCMD(pdf, TOCVisibility.ovAllOn, ocArray, 2);

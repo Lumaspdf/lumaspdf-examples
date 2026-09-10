@@ -80,7 +80,7 @@ int main(int argc, char** argv)
     text = "Link annotations support quad points too";
     w = (float)pdfGetTextWidthA(pdf, text);
     pdfWriteTextA(pdf, 0.0, 120.0, text);
-    a = pdfWebLinkA(pdf, 0.0, 120.0, w, 20.0, "www.dynaforms.com");
+    a = pdfWebLinkA(pdf, 0.0, 120.0, w, 20.0, "www.lumaspdf.com");
     pdfSetAnnotBorderWidth(pdf, a, 1.0);
     pdfSetAnnotColor(pdf, a, fcBorderColor, csDeviceRGB, clBlue);
     points[0].x = 0.0f;  points[0].y = 120.0f + d;  /* Top left corner */

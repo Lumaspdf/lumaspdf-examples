@@ -74,11 +74,11 @@ Module modPersonalize
         LumasPdf.pdfWriteTextW(pdf, 53.0, 48.0, Now().ToString())
         LumasPdf.pdfSetFillColor(pdf, U(&HFF Or (&H66 << 8) Or (&H66 << 16)))
         LumasPdf.pdfSetFontW(pdf, "Helvetica", LumasPdfConsts.fsBold, 22.0, False, TCodepage.cp1252)
-        LumasPdf.pdfWriteTextW(pdf, 340.0, 70.0, "www.dynaforms.de")
+        LumasPdf.pdfWriteTextW(pdf, 340.0, 70.0, "www.lumaspdf.com")
         LumasPdf.pdfSetLineWidth(pdf, 0.0)
         LumasPdf.pdfSetLinkHighlightMode(pdf, CInt(THighlightMode.hmPush))
         LumasPdf.pdfSetAnnotFlags(pdf, U(LumasPdfConsts.afReadOnly))
-        LumasPdf.pdfWebLinkW(pdf, 340.0, 64.0, 204.0, 22.0, "http://www.dynaforms.de")
+        LumasPdf.pdfWebLinkW(pdf, 340.0, 64.0, 204.0, 22.0, "https://www.lumaspdf.com")
         LumasPdf.pdfEndPage(pdf)
 
         Dim outFile As String = AppPath() & "\out.pdf"

@@ -77,7 +77,7 @@ begin
     text := 'Link annotations support quad points too';
     w := pdf.GetTextWidthA(PAnsiChar(text));
     pdf.WriteTextA(0.0, 120.0, PAnsiChar(text));
-    a := pdf.WebLinkA(0.0, 120.0, w, 20.0, 'www.dynaforms.com');
+    a := pdf.WebLinkA(0.0, 120.0, w, 20.0, 'www.lumaspdf.com');
     pdf.SetAnnotBorderWidth(a, 1.0);
     pdf.SetAnnotColor(a, fcBorderColor, csDeviceRGB, clBlue);
     points[0].x := 0.0;  points[0].y := 120.0 + d;  { Top left corner }

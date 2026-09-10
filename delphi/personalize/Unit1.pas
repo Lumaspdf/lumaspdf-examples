@@ -88,11 +88,11 @@ begin
       pdf.WriteText(53.0, 48.0, DateTimeToStr(Date + Time));
       pdf.SetFillColor(RGB($FF, $66, $66));
       pdf.SetFont('Helvetica', fsBold, 22.0, False, cp1252);
-      pdf.WriteText(340.0, 70.0, 'www.dynaforms.de');
+      pdf.WriteText(340.0, 70.0, 'www.lumaspdf.com');
       pdf.SetLineWidth(0.0);
       pdf.SetLinkHighlightMode(hmPush);
       pdf.SetAnnotFlags(afReadOnly);
-      pdf.WebLink(340.0, 64.0, 204.0, 22.0, 'http://www.dynaforms.de');
+      pdf.WebLink(340.0, 64.0, 204.0, 22.0, 'https://www.lumaspdf.com');
       pdf.EndPage;
       // No fatal error occurred?
       if pdf.HaveOpenDoc then begin

@@ -47,7 +47,7 @@ int main(int argc, char** argv){
                 double tw = pdfGetTextWidthW(pdf, someText);
                 pdfSetBorderStyle(pdf, bsUnderline);
                 pdfSetStrokeColor(pdf, clBlue);
-                SI32 annot = pdfWebLinkW(pdf, 50.0, 51.0, tw, 12.0, (LWCHAR*)LUMAS_TEXT("www.dynaforms.com"));
+                SI32 annot = pdfWebLinkW(pdf, 50.0, 51.0, tw, 12.0, (LWCHAR*)LUMAS_TEXT("www.lumaspdf.com"));
 
                 UI32 ocArray[2] = { (UI32)oc1, (UI32)oc2 };
                 SI32 ocmd = pdfCreateOCMD(pdf, ovAllOn, ocArray, 2);

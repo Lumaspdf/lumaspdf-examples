@@ -89,7 +89,7 @@ class QuadPoints
         w = (float)LumasPdf.pdfGetTextWidthW(pdf, text);
         LumasPdf.pdfWriteTextW(pdf, 0, 120, text);
         // Link annotations support quad points too.
-        a = LumasPdf.pdfWebLinkW(pdf, 0, 120, w, 20, "www.dynaforms.com");
+        a = LumasPdf.pdfWebLinkW(pdf, 0, 120, w, 20, "www.lumaspdf.com");
         LumasPdf.pdfSetAnnotBorderWidth(pdf, (uint)a, 1);
         LumasPdf.pdfSetAnnotColor(pdf, (uint)a, TFieldColor.fcBorderColor, TPDFColorSpace.csDeviceRGB, clBlue);
         points[0].x = 0; points[0].y = 120 + d;   // Top left corner

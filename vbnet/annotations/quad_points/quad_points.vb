@@ -85,7 +85,7 @@ Module QuadPoints
         text = "Link annotations support quad points too"
         w = CSng(LumasPdf.pdfGetTextWidthW(pdf, text))
         LumasPdf.pdfWriteTextW(pdf, 0.0, 120.0, text)
-        a = LumasPdf.pdfWebLinkW(pdf, 0.0, 120.0, w, 20.0, "www.dynaforms.com")
+        a = LumasPdf.pdfWebLinkW(pdf, 0.0, 120.0, w, 20.0, "www.lumaspdf.com")
         LumasPdf.pdfSetAnnotBorderWidth(pdf, a, 1.0)
         LumasPdf.pdfSetAnnotColor(pdf, a, TFieldColor.fcBorderColor, TPDFColorSpace.csDeviceRGB, clBlue)
         points(0).x = 0.0F : points(0).y = 120.0F + d

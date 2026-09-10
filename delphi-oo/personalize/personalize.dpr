@@ -68,11 +68,11 @@ begin
     pdf.WriteTextA(53.0, 48.0, PAnsiChar(nowbuf));
     pdf.SetFillColor(RGB_FF6666);
     pdf.SetFontA('Helvetica', fsBold, 22.0, False, cp1252);
-    pdf.WriteTextA(340.0, 70.0, 'www.dynaforms.de');
+    pdf.WriteTextA(340.0, 70.0, 'www.lumaspdf.com');
     pdf.SetLineWidth(0.0);
     pdf.SetLinkHighlightMode(Ord(hmPush));
     pdf.SetAnnotFlags(afReadOnly);
-    pdf.WebLinkA(340.0, 64.0, 204.0, 22.0, 'http://www.dynaforms.de');
+    pdf.WebLinkA(340.0, 64.0, 204.0, 22.0, 'https://www.lumaspdf.com');
     pdf.EndPage;
 
     if pdf.HaveOpenDoc then

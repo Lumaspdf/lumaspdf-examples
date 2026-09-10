@@ -53,7 +53,7 @@ int main(int argc, char** argv)
                 tw = pdfGetTextWidthA(pdf, someText);
                 pdfSetBorderStyle(pdf, bsUnderline);
                 pdfSetStrokeColor(pdf, clBlue);
-                annot = pdfWebLinkA(pdf, 50.0, 51.0, tw, 12.0, "www.dynaforms.com");
+                annot = pdfWebLinkA(pdf, 50.0, 51.0, tw, 12.0, "www.lumaspdf.com");
 
                 ocArray[0] = (UI32)oc1;
                 ocArray[1] = (UI32)oc2;

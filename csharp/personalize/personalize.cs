@@ -67,11 +67,11 @@ class Personalize
         LumasPdf.pdfWriteTextW(pdf, 53.0, 48.0, DateTime.Now.ToString());
         LumasPdf.pdfSetFillColor(pdf, RGB(0xFF, 0x66, 0x66));
         LumasPdf.pdfSetFontW(pdf, "Helvetica", LumasPdfConsts.fsBold, 22.0, false, TCodepage.cp1252);
-        LumasPdf.pdfWriteTextW(pdf, 340.0, 70.0, "www.dynaforms.de");
+        LumasPdf.pdfWriteTextW(pdf, 340.0, 70.0, "www.lumaspdf.com");
         LumasPdf.pdfSetLineWidth(pdf, 0.0);
         LumasPdf.pdfSetLinkHighlightMode(pdf, (int)THighlightMode.hmPush);
         LumasPdf.pdfSetAnnotFlags(pdf, LumasPdfConsts.afReadOnly);
-        LumasPdf.pdfWebLinkW(pdf, 340.0, 64.0, 204.0, 22.0, "http://www.dynaforms.de");
+        LumasPdf.pdfWebLinkW(pdf, 340.0, 64.0, 204.0, 22.0, "https://www.lumaspdf.com");
         LumasPdf.pdfEndPage(pdf);
 
         string outFile = Path.Combine(dir, "out.pdf");

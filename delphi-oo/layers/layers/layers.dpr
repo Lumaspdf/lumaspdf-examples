@@ -47,7 +47,7 @@ begin
           tw := pdf.GetTextWidthA(PAnsiChar(someText));
           pdf.SetBorderStyle(Ord(bsUnderline));
           pdf.SetStrokeColor(clBlue);
-          annot := pdf.WebLinkA(50.0, 51.0, tw, 12.0, 'www.dynaforms.com');
+          annot := pdf.WebLinkA(50.0, 51.0, tw, 12.0, 'www.lumaspdf.com');
 
           ocArray[0] := Cardinal(oc1);
           ocArray[1] := Cardinal(oc2);

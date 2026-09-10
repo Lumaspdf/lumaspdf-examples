@@ -89,7 +89,7 @@ def main():
     w = L.pdfGetTextWidthA(pdf, text)
     L.pdfWriteTextA(pdf, 0.0, 120.0, text)
     # Link annotations support quad points too.
-    a = L.pdfWebLinkA(pdf, 0.0, 120.0, w, 20.0, b"www.dynaforms.com")
+    a = L.pdfWebLinkA(pdf, 0.0, 120.0, w, 20.0, b"www.lumaspdf.com")
     L.pdfSetAnnotBorderWidth(pdf, a, 1.0)
     L.pdfSetAnnotColor(pdf, a, L.fcBorderColor, L.csDeviceRGB, clBlue)
     points[0].x = 0.0;  points[0].y = 120.0 + d   # Top left corner

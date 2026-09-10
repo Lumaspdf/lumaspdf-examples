@@ -55,7 +55,7 @@ Public Sub Main()
         ' because the visibility of layer oc2 depends on oc1 at this position.
         pdf.SetBorderStyle bsUnderline
         pdf.SetStrokeColor clBlue
-        annot = pdf.WebLinkA(50#, 51#, tw, 12#, "www.dynaforms.com")
+        annot = pdf.WebLinkA(50#, 51#, tw, 12#, "www.lumaspdf.com")
 
         ocmd = pdf.CreateOCMD(ovAllOn, Array(oc1, oc2), 2)
         pdf.AddObjectToLayer ocmd, ooAnnotation, annot

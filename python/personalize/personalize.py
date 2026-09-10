@@ -86,11 +86,11 @@ def main():
     L.pdfWriteTextA(pdf, 53.0, 48.0, a(str(datetime.datetime.now())))
     L.pdfSetFillColor(pdf, rgb(0xFF, 0x66, 0x66))
     L.pdfSetFontA(pdf, b"Helvetica", L.fsBold, 22.0, 0, L.cp1252)
-    L.pdfWriteTextA(pdf, 340.0, 70.0, a("www.dynaforms.de"))
+    L.pdfWriteTextA(pdf, 340.0, 70.0, a("www.lumaspdf.com"))
     L.pdfSetLineWidth(pdf, 0.0)
     L.pdfSetLinkHighlightMode(pdf, L.hmPush)
     L.pdfSetAnnotFlags(pdf, L.afReadOnly)
-    L.pdfWebLinkA(pdf, 340.0, 64.0, 204.0, 22.0, a("http://www.dynaforms.de"))
+    L.pdfWebLinkA(pdf, 340.0, 64.0, 204.0, 22.0, a("https://www.lumaspdf.com"))
     L.pdfEndPage(pdf)
 
     out_file = os.path.join(HERE, "out.pdf")

@@ -138,7 +138,7 @@ Public Sub Main()
     w = pdf.GetTextWidthA(text)
     pdf.WriteTextW 0#, 120#, text
     ' Link annotations support quad points too.
-    a = pdf.WebLinkA(0#, 120#, w, 20#, "www.dynaforms.com")
+    a = pdf.WebLinkA(0#, 120#, w, 20#, "www.lumaspdf.com")
     pdf.SetAnnotBorderWidth a, 1#
     pdf.SetAnnotColor a, fcBorderColor, csDeviceRGB, clBlue
     SetRotatedQuad pdf, a, 0#, 120#, w, 20#

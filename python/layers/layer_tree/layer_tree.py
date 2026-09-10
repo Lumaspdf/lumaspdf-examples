@@ -62,7 +62,7 @@ def main():
     tw = L.pdfGetTextWidthA(pdf, some_text)
     L.pdfSetBorderStyle(pdf, L.bsUnderline)
     L.pdfSetStrokeColor(pdf, clBlue)
-    annot = L.pdfWebLinkA(pdf, 50.0, 51.0, tw, 12.0, b"www.dynaforms.com")
+    annot = L.pdfWebLinkA(pdf, 50.0, 51.0, tw, 12.0, b"www.lumaspdf.com")
 
     oc_array = (ctypes.c_int32 * 2)(oc1, oc2)
     ocmd = L.pdfCreateOCMD(pdf, L.ovAllOn, ctypes.cast(oc_array, ctypes.c_void_p), 2)

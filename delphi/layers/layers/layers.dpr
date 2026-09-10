@@ -56,7 +56,7 @@ begin
                // because the visibility of the layer oc2 depends on oc1 at this position.
                pdf.SetBorderStyle(bsUnderline);
                pdf.SetStrokeColor(clBlue);
-               annot := pdf.WebLink(50.0, 51.0, tw, 12.0, 'www.dynaforms.com');
+               annot := pdf.WebLink(50.0, 51.0, tw, 12.0, 'www.lumaspdf.com');
 
                ocArray[0] := oc1;
                ocArray[1] := oc2;

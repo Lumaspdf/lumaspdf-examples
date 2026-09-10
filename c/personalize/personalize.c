@@ -71,11 +71,11 @@ int main(int argc, char** argv)
     pdfWriteTextA(pdf, 53.0, 48.0, nowbuf);
     pdfSetFillColor(pdf, RGB_(0xFF, 0x66, 0x66));
     pdfSetFontA(pdf, "Helvetica", fsBold, 22.0, 0, cp1252);
-    pdfWriteTextA(pdf, 340.0, 70.0, "www.dynaforms.de");
+    pdfWriteTextA(pdf, 340.0, 70.0, "www.lumaspdf.com");
     pdfSetLineWidth(pdf, 0.0);
     pdfSetLinkHighlightMode(pdf, hmPush);
     pdfSetAnnotFlags(pdf, afReadOnly);
-    pdfWebLinkA(pdf, 340.0, 64.0, 204.0, 22.0, "http://www.dynaforms.de");
+    pdfWebLinkA(pdf, 340.0, 64.0, 204.0, 22.0, "https://www.lumaspdf.com");
     pdfEndPage(pdf);
 
     if (pdfHaveOpenDoc(pdf)) {

@@ -40,7 +40,7 @@ Module modLayers
         Dim tw As Double = LumasPdf.pdfGetTextWidthW(pdf, someText)
         LumasPdf.pdfSetBorderStyle(pdf, CInt(TBorderStyle.bsUnderline))
         LumasPdf.pdfSetStrokeColor(pdf, clBlue)
-        Dim annot As Integer = LumasPdf.pdfWebLinkW(pdf, 50.0, 51.0, tw, 12.0, "www.dynaforms.com")
+        Dim annot As Integer = LumasPdf.pdfWebLinkW(pdf, 50.0, 51.0, tw, 12.0, "www.lumaspdf.com")
 
         ' pdfCreateOCMD's OCGs parameter is a typed UInteger() in the binding
         ' (matching the C# side), so the marshaller pins and passes the array.
